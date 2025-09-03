@@ -16,7 +16,9 @@ class PhoneBook:
     def search(self,text_search):
         self.show_contact_list.clear()
         for contact in self.contact_list:
-            if text_search in contact.firstname or text_search in contact.lastname or text_search in contact.email:
+            if (text_search.upper() in contact.firstname.upper()
+                    or text_search.upper() in contact.lastname.upper()
+                    or text_search.upper() in contact.email.upper()):
                 self.show_contact_list.append(contact)
         return self.show_contact_list
 

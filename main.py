@@ -127,13 +127,7 @@ def create_table_body():
         email_entry.grid(row=row_number + 1, column=4, padx=2, pady=1)
         entry_list.append(email_entry)
 
-        edit_button = Button(window, text="Edit")
-        edit_button.grid(row=row_number + 1, column=5, padx=2, pady=1)
-        entry_list.append(edit_button)
 
-        delete_button = Button(window, text="Delet")
-        delete_button.grid(row=row_number + 1, column=6, padx=2, pady=1)
-        entry_list.append(delete_button)
 
         row_number+=1
 
